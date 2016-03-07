@@ -14,8 +14,8 @@ public class Main {
     private static List<String> getPosts() {
 	List<String> results = new ArrayList<String>();
 		File[] files = new File("/home/vp/Desktop/blog/src/main/resources/spark/template/freemarker/posts").listFiles();
-		for ((File file : files) && (file.name.endsWith(".ftl"))) {
-		    if (file.isFile()) {
+		for (File file : files) {
+		    if (file.isFile() && file.getName().endsWith(".ftl")) {
 			results.add(file.getName().replace(".ftl", ""));
 		    }
 		}

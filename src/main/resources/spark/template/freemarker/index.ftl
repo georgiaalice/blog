@@ -17,7 +17,7 @@
                     <h3>Blog Posts</h3>
                     <ul>
 			<#list posts as post>
-			<li><a href="/posts/${post}/">${post}</a></li>
+			<li><a href="/posts/${post}/">${post?replace("_", " ")}</a></li>
 			</#list>
                     </ul>
             </div>
