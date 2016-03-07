@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class Main {
 
+
     private static List<String> getPosts() {
 	List<String> results = new ArrayList<String>();
 		File[] files = new File("target/classes/spark/template/freemarker/posts").listFiles();
