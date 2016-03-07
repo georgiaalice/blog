@@ -16,8 +16,9 @@
                 <div class="col-md-6">
                     <h3>Blog Posts</h3>
                     <ul>
-                        <li><a href="/posts/SchemeandLambdaCalculus/">Scheme and Lambda Calculus</a></li>
-                        <li><a href="/posts/ProblemSolvingandBeingLazy/">Problem Solving and Being Lazy</a></li>
+			<#list posts as post>
+			<li><a href="/posts/${post}/">${post}</a></li>
+			</#list>
                     </ul>
             </div>
           </div>
